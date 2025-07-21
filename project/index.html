@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div dir="ltr" class="font-sans bg-gray-50 min-h-screen flex flex-col">
+      <!-- Navbar -->
+      <nav class="w-full bg-white shadow-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <span class="text-2xl font-extrabold text-[#44b3b8] tracking-wide">LOGO</span>
+          </div>
+          <!-- Nav Links -->
+          <div class="hidden md:flex gap-8 items-center flex-1 justify-center">
+            <a href="#home" class="text-[#44b3b8] font-semibold border-b-2 border-[#44b3b8] pb-1">Home</a>
+            <a href="#about" class="text-gray-600 font-medium hover:text-[#44b3b8] transition">About</a>
+            <a href="#services" class="text-gray-600 font-medium hover:text-[#44b3b8] transition">Services</a>
+            <a href="#portfolio" class="text-gray-600 font-medium hover:text-[#44b3b8] transition">Portfolio</a>
+            <a href="#contact" class="text-gray-600 font-medium hover:text-[#44b3b8] transition">Contact</a>
+          </div>
+          <!-- Language Switcher -->
+          <div class="flex items-center">
+            <div class="flex bg-gray-100 rounded-full shadow px-2 py-1 gap-1">
+              <button class="bg-[#44b3b8] text-white text-xs font-bold px-4 py-1 rounded-full focus:outline-none">EN</button>
+              <button class="text-gray-500 text-xs font-bold px-4 py-1 rounded-full focus:outline-none">AR</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Landing Section -->
+      <section
+        class="relative w-full min-h-[800px] flex flex-col items-center justify-center"
+      >
+        <div
+          style="background: linear-gradient(180deg, #7b3ff2 0%, #0099ff 100%)"
+          class="w-full flex flex-col items-center justify-center pt-16 pb-24 flex-1"
+        >
+          <div class="relative flex flex-col items-center">
+            <div
+              class="rounded-full bg-white flex items-center justify-center shadow-xl"
+              style="
+                width: 160px;
+                height: 160px;
+                box-shadow: 0 0 0 24px rgba(123, 63, 242, 0.08),
+                  0 0 0 48px rgba(123, 63, 242, 0.04);
+              "
+            >
+              <span class="text-4xl font-extrabold text-[#5b5fc7] tracking-wide"
+                >LOGO</span
+              >
+            </div>
+            <div
+              class="mt-6 flex gap-2 bg-white/80 rounded-full px-4 py-1 shadow-md backdrop-blur-sm"
+            >
+              <button
+                class="text-xs font-semibold text-[#5b5fc7] px-2 py-1 rounded focus:outline-none"
+              >
+                EN
+              </button>
+              <button
+                class="text-xs font-semibold text-gray-500 px-2 py-1 rounded focus:outline-none"
+              >
+                AR
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-0 left-0 w-full overflow-hidden leading-none">
+          <img
+            src="./wave.svg"
+            alt="wave"
+            class="w-full block"
+            style="margin-bottom: -4px"
+          />
+        </div>
+      </section>
+      <!-- Header (old) -->
+      <!-- <header class="flex flex-col items-center justify-center py-12 bg-white shadow-md">
+        <img src="/vite.svg" alt="Logo" class="w-32 h-32 object-contain mb-4" />
+        <h1 class="text-3xl font-bold text-gray-800">Logo</h1>
+      </header> -->
+
+      <!-- Language Switcher -->
+      <div class="flex justify-end px-6 py-2">
+        <button
+          class="text-sm px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 transition"
+        >
+          Switch Language
+        </button>
+      </div>
+
+      <!-- Main Content -->
+      <main class="flex-1 w-full max-w-5xl mx-auto px-4 space-y-16">
+        <!-- Services Section -->
+        <section class="text-center py-16 bg-white" id="services">
+          <h2 class="text-4xl font-extrabold mb-8 text-gray-900">
+            Our Services
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          >
+            <!-- Card 1 -->
+            <div
+              class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center transition hover:shadow-lg"
+            >
+              <span class="text-4xl text-purple-500 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 18v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2m16-6V6a2 2 0 00-2-2H6a2 2 0 00-2 2v6m16 0a2 2 0 01-2 2H6a2 2 0 01-2-2"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-bold text-xl mb-2 text-gray-900">
+                Web Development
+              </h3>
+              <p class="text-gray-500">
+                Custom websites built with the latest technologies to deliver
+                exceptional user experiences.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center transition hover:shadow-lg"
+            >
+              <span class="text-4xl text-purple-500 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m4 0h-1v4h-1m-4 0h-1v-4h-1m4 0h-1v4h-1"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-bold text-xl mb-2 text-gray-900">
+                Creative Design
+              </h3>
+              <p class="text-gray-500">
+                Stunning visual designs that capture your brand's essence and
+                engage your audience.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center transition hover:shadow-lg"
+            >
+              <span class="text-4xl text-purple-500 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17a2.25 2.25 0 104.5 0m-4.5 0a2.25 2.25 0 014.5 0m-4.5 0H5.25A2.25 2.25 0 013 14.75v-7.5A2.25 2.25 0 015.25 5h13.5A2.25 2.25 0 0121 7.25v7.5A2.25 2.25 0 0118.75 17H14.25m-4.5 0v0z"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-bold text-xl mb-2 text-gray-900">UI/UX Design</h3>
+              <p class="text-gray-500">
+                User-centered design that creates intuitive, efficient, and
+                enjoyable digital experiences.
+              </p>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center transition hover:shadow-lg"
+            >
+              <span class="text-4xl text-purple-500 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 17a2 2 0 002 2m-2-2a2 2 0 01-2-2m2 2V7m0 10a2 2 0 002-2m-2 2a2 2 0 01-2-2m2 2V7m0 10a2 2 0 002-2m-2 2a2 2 0 01-2-2m2 2V7"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-bold text-xl mb-2 text-gray-900">
+                Analytics & SEO
+              </h3>
+              <p class="text-gray-500">
+                Data-driven strategies to improve visibility and drive
+                meaningful traffic to your site.
+              </p>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center transition hover:shadow-lg"
+            >
+              <span class="text-4xl text-purple-500 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M9 20H4v-2a3 3 0 015.356-1.857M15 11a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-bold text-xl mb-2 text-gray-900">
+                Brand Identity
+              </h3>
+              <p class="text-gray-500">
+                Comprehensive branding solutions that help you stand out in a
+                competitive market.
+              </p>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center transition hover:shadow-lg"
+            >
+              <span class="text-4xl text-purple-500 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-10 h-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+              <h3 class="font-bold text-xl mb-2 text-gray-900">24/7 Support</h3>
+              <p class="text-gray-500">
+                Dedicated support team ready to assist you with any issues or
+                questions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="text-center" id="portfolio">
+          <h2 class="text-4xl font-bold mb-2 text-white">Our Portfolio</h2>
+          <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+            Explore a selection of our outstanding work that reflects our
+            expertise and creativity across various technical and design fields
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="bg-[#23293a] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            >
+              <div
+                class="h-40 w-full bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+                  alt="E-Commerce"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <span
+                  class="inline-block bg-[#2d3652] text-xs text-white px-3 py-1 rounded-full mb-3"
+                  >Web Development</span
+                >
+                <h3 class="text-lg font-bold text-white mb-1 text-left">
+                  E-Commerce Platform
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 text-left">
+                  Modern e-commerce solution with advanced features and seamless
+                  user experience.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >React</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Node.js</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-[#23293a] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            >
+              <div
+                class="h-40 w-full bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80"
+                  alt="Mobile Banking"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <span
+                  class="inline-block bg-[#2d3652] text-xs text-white px-3 py-1 rounded-full mb-3"
+                  >Mobile Development</span
+                >
+                <h3 class="text-lg font-bold text-white mb-1 text-left">
+                  Mobile Banking App
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 text-left">
+                  Secure and intuitive mobile banking application with biometric
+                  authentication.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >React Native</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Firebase</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Biometrics</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-[#23293a] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            >
+              <div
+                class="h-40 w-full bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                  alt="Brand Identity"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <span
+                  class="inline-block bg-[#2d3652] text-xs text-white px-3 py-1 rounded-full mb-3"
+                  >Design</span
+                >
+                <h3 class="text-lg font-bold text-white mb-1 text-left">
+                  Brand Identity Design
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 text-left">
+                  Complete brand identity package including logo, colors, and
+                  guidelines.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Branding</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Logo Design</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Guidelines</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="bg-[#23293a] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            >
+              <div
+                class="h-40 w-full bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                  alt="AI Dashboard"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <span
+                  class="inline-block bg-[#2d3652] text-xs text-white px-3 py-1 rounded-full mb-3"
+                  >Data Visualization</span
+                >
+                <h3 class="text-lg font-bold text-white mb-1 text-left">
+                  AI Dashboard
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 text-left">
+                  Advanced analytics dashboard with AI-powered insights and
+                  real-time data.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >AI</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Analytics</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Dashboard</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="bg-[#23293a] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            >
+              <div
+                class="h-40 w-full bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&w=400&q=80"
+                  alt="Restaurant Website"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <span
+                  class="inline-block bg-[#2d3652] text-xs text-white px-3 py-1 rounded-full mb-3"
+                  >Web Design</span
+                >
+                <h3 class="text-lg font-bold text-white mb-1 text-left">
+                  Restaurant Website
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 text-left">
+                  Elegant restaurant website with online reservation and menu
+                  management.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >WordPress</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Booking</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Menu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="bg-[#23293a] rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            >
+              <div
+                class="h-40 w-full bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
+                  alt="Fitness App"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <span
+                  class="inline-block bg-[#2d3652] text-xs text-white px-3 py-1 rounded-full mb-3"
+                  >Mobile App</span
+                >
+                <h3 class="text-lg font-bold text-white mb-1 text-left">
+                  Fitness Tracking App
+                </h3>
+                <p class="text-gray-300 text-sm mb-4 text-left">
+                  Comprehensive fitness tracking app with workout plans and
+                  progress monitoring.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Flutter</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Health</span
+                  >
+                  <span
+                    class="bg-[#313a53] text-xs text-gray-200 px-2 py-1 rounded"
+                    >Tracking</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10">
+            <button
+              class="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-semibold text-lg shadow-lg hover:from-indigo-600 hover:to-blue-600 transition"
+            >
+              View More Projects
+            </button>
+          </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="w-full" id="contact">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold mb-2">Contact Us</h2>
+            <p class="text-gray-500 max-w-xl mx-auto">
+              We're here to help you achieve your goals. Contact us today and
+              let's start your success journey together
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-8 md:items-start">
+            <!-- Form Card -->
+            <div class="flex-1 bg-white rounded-2xl shadow-lg p-8 mb-6 md:mb-0">
+              <h3 class="font-bold text-lg mb-6 text-left">
+                Send us a message
+              </h3>
+              <form class="space-y-4">
+                <div>
+                  <label class="block font-medium mb-1 text-sm" for="name">
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your full name"
+                    class="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-400 text-sm"
+                    dir="ltr"
+                  />
+                </div>
+                <div>
+                  <label class="block font-medium mb-1 text-sm" for="email">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-400 text-sm"
+                    dir="ltr"
+                  />
+                </div>
+                <div>
+                  <label class="block font-medium mb-1 text-sm" for="message">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    placeholder="Write your message here..."
+                    class="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-400 text-sm"
+                    rows="4"
+                    dir="ltr"
+                  ></textarea>
+                </div>
+                <div class="flex gap-4 mt-4">
+                  <a
+                    href="https://wa.me/15551234567"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex-1 flex items-center justify-center gap-2 px-0 py-0 h-12 rounded-xl bg-green-500 text-white font-semibold shadow hover:bg-green-600 transition text-base"
+                    style="box-shadow: 0 4px 16px 0 rgba(34, 197, 94, 0.1)"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.72 13.06c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49-.17-.01-.36-.01-.56-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.03 2.81 1.18 3 .15.19 2.03 3.1 4.93 4.23.69.3 1.23.48 1.65.61.69.22 1.32.19 1.81.12.55-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34z"
+                      />
+                    </svg>
+                    WhatsApp
+                  </a>
+                  <a
+                    href="mailto:info@company.com"
+                    class="flex-1 flex items-center justify-center gap-2 px-0 py-0 h-12 rounded-xl bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-base"
+                    style="box-shadow: 0 4px 16px 0 rgba(59, 130, 246, 0.1)"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M4 4h16v16H4z" stroke="none" />
+                      <path d="M22 6l-10 7L2 6" />
+                    </svg>
+                    Email
+                  </a>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right Side: Buttons, Info, Hours -->
+            <div class="flex-1 flex flex-col gap-6">
+              <!-- Buttons -->
+              <div class="flex gap-4 mb-2">
+                <!-- Buttons moved below the form -->
+              </div>
+              <!-- Contact Info Card -->
+              <div
+                class="bg-white rounded-2xl shadow-lg p-6 text-left flex flex-col gap-4"
+              >
+                <h4 class="font-bold text-lg mb-2">Contact Information</h4>
+                <div class="flex items-center gap-3">
+                  <span class="bg-purple-100 text-purple-600 rounded-lg p-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22 16.92V19a2 2 0 0 1-2 2A18 18 0 0 1 3 5a2 2 0 0 1 2-2h2.09a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="text-xs text-gray-500">Phone</div>
+                    <div class="font-medium">+1 (555) 123-4567</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="bg-green-100 text-green-600 rounded-lg p-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M4 4h16v16H4z" stroke="none" />
+                      <path d="M22 6l-10 7L2 6" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="text-xs text-gray-500">Email</div>
+                    <div class="font-medium">info@company.com</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="bg-orange-100 text-orange-600 rounded-lg p-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.657 16.657L13.414 12.414a2 2 0 0 0-2.828 0l-4.243 4.243"
+                      />
+                      <path d="M7 7h.01" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="text-xs text-gray-500">Address</div>
+                    <div class="font-medium">Riyadh, Saudi Arabia</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Business Hours Card -->
+              <div class="bg-white rounded-2xl shadow-lg p-6 text-left">
+                <h4 class="font-bold text-lg mb-2">Business Hours</h4>
+                <div class="flex flex-col gap-1 text-sm">
+                  <div class="flex justify-between">
+                    <span> Sunday – Thursday </span>
+                    <span>9:00 AM – 6:00 PM</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span> Friday – Saturday </span>
+                    <span>Closed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="mt-16 bg-white py-4 text-center text-gray-500 text-sm border-t"
+      >
+        Footer 2024
+      </footer>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

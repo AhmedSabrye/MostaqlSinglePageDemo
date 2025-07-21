@@ -1,0 +1,39 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logo {
+  animation: fadeInScale 1.5s ease-out forwards;
+}
+
+.logo-out {
+  animation: fadeInScale 1.5s ease-out reverse;
+}
+
+.hero {
+  background: linear-gradient(180deg, #7b3ff22d 0%, #000000bd 100%),
+    url(./assets/Hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
