@@ -29,10 +29,10 @@ export default function LandingSection() {
         <div className="relative size-42 md:size-96 rounded-full items-center overflow-hidden bg-black/80 p-5">
           <img src={logo} alt="logo" />
         </div>
-        <h1 className="text-6xl font-bold text-white mt-10 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mt-10 text-center">
           {currentContent.title}
         </h1>
-        <p className="text-white text-center text-2xl mt-5 max-w-2xl">
+        <p className="text-white text-center text-lg md:text-2xl mt-5 max-w-2xl">
           {currentContent.description}
         </p>
       </div>
