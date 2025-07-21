@@ -26,7 +26,7 @@ export default function LandingSection() {
       id="home"
     >
       <div className="w-full flex flex-col items-center justify-center pt-16 pb-24 flex-1">
-        <div className="relative size-96 rounded-full items-center overflow-hidden bg-black/80 p-5">
+        <div className="relative size-42 md:size-96 rounded-full items-center overflow-hidden bg-black/80 p-5">
           <img src={logo} alt="logo" />
         </div>
         <h1 className="text-6xl font-bold text-white mt-10 text-center">
